@@ -7,7 +7,7 @@ Trains and evaluates two segmentation models - a custom U-Net and a pretrained D
 
 Designed to be ran in Google colab environment on GPU
 ```bash
-pip install torch torchvision numpy Pillow matplotlib scikit-learn tqdm fiftyone segmentation-models-pytorch
+pip install torch torchvision numpy matplotlib scikit-learn tqdm fiftyone segmentation-models-pytorch
 ```
 
 ## Models
