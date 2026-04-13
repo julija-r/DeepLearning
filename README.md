@@ -12,9 +12,9 @@ pip install torch torchvision numpy matplotlib scikit-learn tqdm fiftyone segmen
 
 ## Models
 
-**Custom U-Net** — trained from scratch, 4 encoder/decoder blocks with skip connections.
+**U-Net** - 4 encoder/decoder blocks with skip connections, trained from scratch
 
-**DeepLabV3+** — pretrained ResNet50 encoder (ImageNet weights) fine-tuned for 4 classes.
+**DeepLabV3+** - a ResNet50 encoder, pretrained on ImageNet dataset, fine-tuned for 4 classes.
 
 ## Pipeline
 
@@ -22,7 +22,7 @@ pip install torch torchvision numpy matplotlib scikit-learn tqdm fiftyone segmen
 - 5000 images downloaded from Open Images V7 train split (Bird, Bottle, Car)
 - Split 80/20 into train and validation sets
 - CrossEntropyLoss with class weights `[0.15, 1.0, 1.0, 1.0]` to reduce background dominance
-- U-Net: Adam, lr=0.001 — DeepLabV3+: Adam, lr=0.0001
+- U-Net: Adam, lr=0.001; DeepLabV3+: Adam, lr=0.0001
 - Up to 10 epochs with early stopping on loss divergence
 - Best model saved
 
